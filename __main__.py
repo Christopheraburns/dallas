@@ -5,10 +5,9 @@ import computervision as vision
 
 def main(init):
     try:
-
-
         # Take a picture
         vision.Vision.takeSinglePicture()
+
         # Send to rekognition image-to-text service
 
         # Get result
@@ -19,6 +18,8 @@ def main(init):
 
         # Play audio file from Polly
     except Exception as e:
-        print(e)
+        print("Error in def main(): ".format(e))
+
+
 if __name__ =="__main__":
     main(True)
