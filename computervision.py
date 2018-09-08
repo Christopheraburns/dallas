@@ -26,7 +26,7 @@ class Vision(object):
             cameras = pygame.camera.list_cameras()
             for camera in cameras:
                 if camera:
-                    cam = pygame.camera.Camera(camera(640, 480), "RGB")
+                    cam = pygame.camera.Camera(camera, (640, 480))
                     cam.start()
                     img = cam.get_image()
                     pygame.image.save(img, "capture.png")
