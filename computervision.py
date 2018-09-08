@@ -23,7 +23,8 @@ class Vision(object):
     def takeSinglePicture(detect_labels=False):
         try:
             pygame.camera.init()
-            cam = pygame.camera.Camera("dev/video0",(640, 480))
+            # hardcode to the WebCam for the Dallas demo
+            cam = pygame.camera.Camera("/dev/video0", (640, 480))
             cam.start()
             img = cam.get_image()
             pygame.image.save(img, "capture.png")
