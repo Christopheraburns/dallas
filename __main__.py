@@ -5,10 +5,10 @@ import computervision as vision
 
 def main(init):
     try:
-        print("Script loaded")
+
 
         # Take a picture
-
+        vision.Vision.takeSinglePicture()
         # Send to rekognition image-to-text service
 
         # Get result
