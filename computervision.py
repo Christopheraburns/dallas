@@ -23,15 +23,12 @@ class Vision(object):
     def takeSinglePicture(detect_labels=False):
         try:
             pygame.camera.init()
-            cameras = pygame.camera.list_cameras()
-            for camera in cameras:
-                if camera:
-                    cam = pygame.camera.Camera(camera, (640, 480))
-                    cam.start()
-                    img = cam.get_image()
-                    pygame.image.save(img, "capture.png")
-                    cam.stop()
-                break
+            cam = pygame.camera.Camera("dev/video0",(640, 480))
+            cam.start()
+            img = cam.get_image()
+            pygame.image.save(img, "capture.png")
+            cam.stop()
+
         except Exception as e:
             print("error in ComputerVision.Vision.takeSinglePicture(): {}".format(e))
 
