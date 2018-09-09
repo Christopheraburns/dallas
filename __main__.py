@@ -9,11 +9,11 @@ def main(init):
     try:
 
         if len(sys.argv) > 1:
-            check = sys.argv[1]
-            if (check is not True) or (check is not False):
-                print("invalid parameter")
-            else:
+            check = str(sys.argv[1]).lower()
+            if (check == "true") or (check == "false"):
                 debug = sys.argv[1]
+            else:
+                print("invalid parameter")
 
         # Take a picture
         vision.Vision.takeSinglePicture(False, debug)
