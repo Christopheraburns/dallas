@@ -10,7 +10,7 @@ polly = session.client("polly")
 
 
 
-def pollySays(value):
+def pollySays(value, debug=False):
     try:
         response = polly.synthesize_speech(Text=value, OutputFormat="ogg_vorbis", VoiceId="Emma")
         if "AudioStream" in response:

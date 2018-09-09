@@ -20,7 +20,7 @@ class Vision(object):
 
 
     @staticmethod
-    def takeSinglePicture(detect_labels=False):
+    def takeSinglePicture(detect_labels=False, debug=False):
         try:
             pygame.camera.init()
             # hardcode to the WebCam for the Dallas demo
@@ -35,13 +35,15 @@ class Vision(object):
 
 
     @staticmethod
-    def imageToText():
+    def imageToText(debug=False):
         phraseBuilder = ""
         try:
             with open("capture.png", "rb") as imagefile:
                 response = rekognition.detect_text(Image={'Bytes': imagefile.read()})
 
             tDetections = response.values()[0]
+            if(debug == True):
+                print("Reko imagetoText result: {}".format(tDetections))
 
             if (len(tDetections) > 0) and (tDetections is not None):
                 phraseBuilder = ""
@@ -58,7 +60,8 @@ class Vision(object):
                            ]
                 select = randint(0,3)
                 phraseBuilder = phrases[select]
-                #print(phraseBuilder)
+                if(debug == True):
+                    print(phraseBuilder)
 
             return phraseBuilder
         except Exception as e:
