@@ -8,7 +8,7 @@ def main(init):
     try:
 
         if len(sys.argv) == 1:
-            debug=sys.argv[1]
+            debug = sys.argv[0]
 
 
         # Take a picture
