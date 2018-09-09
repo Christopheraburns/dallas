@@ -10,13 +10,13 @@ def main(init):
 
         if len(sys.argv) > 1:
             check = str(sys.argv[1]).lower()
-            if (check == "true") or (check == "false"):
-                debug = sys.argv[1]
+            if (check == "true"):
+                debug = True
             else:
                 print("invalid parameter")
 
         # Take a picture
-        vision.Vision.takeSinglePicture(False, debug)
+        vision.Vision.takeSinglePicture(debug)
 
         # Send to rekognition image-to-text service
         result = vision.Vision.imageToText(debug)

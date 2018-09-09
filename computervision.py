@@ -20,7 +20,7 @@ class Vision(object):
 
 
     @staticmethod
-    def takeSinglePicture(detect_labels=False, debug=False):
+    def takeSinglePicture(debug):
         try:
             pygame.camera.init()
             # hardcode to the WebCam for the Dallas demo
@@ -29,13 +29,14 @@ class Vision(object):
             img = cam.get_image()
             pygame.image.save(img, "capture.png")
             cam.stop()
-
+            if debug == True:
+                print("image saved to capture.png")
         except Exception as e:
             print("error in ComputerVision.Vision.takeSinglePicture(): {}".format(e))
 
 
     @staticmethod
-    def imageToText(debug=False):
+    def imageToText(debug):
         phraseBuilder = ""
         try:
             with open("capture.png", "rb") as imagefile:
@@ -46,7 +47,6 @@ class Vision(object):
                 print("Reko imagetoText result: {}".format(tDetections))
 
             if (len(tDetections) > 0) and (tDetections is not None):
-                phraseBuilder = ""
                 for item in tDetections:
                     if (item["Type"] == "LINE"):
                         phraseBuilder = phraseBuilder + "" + item["DetectedText"]
@@ -58,10 +58,10 @@ class Vision(object):
                            "I don't see anything to read",
                            "Is the light bad in here? I don't see any text"
                            ]
-                select = randint(0,3)
+                select = randint(0, 3)
                 phraseBuilder = phrases[select]
                 if(debug == True):
-                    print(phraseBuilder)
+                    print("Voice output should be: {}".format(phraseBuilder))
 
             return phraseBuilder
         except Exception as e:

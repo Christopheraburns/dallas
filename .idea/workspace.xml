@@ -4,6 +4,8 @@
     <list default="true" id="843086fd-5e9c-42f7-8617-96b4d5c4d231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computerspeech.py" beforeDir="false" afterPath="$PROJECT_DIR$/computerspeech.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computervision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computervision.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,41 +47,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3465" />
-          <entry key="txt" value="193" />
+          <entry key="py" value="3606" />
+          <entry key="txt" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="193" />
-          <entry key="Python" value="3465" />
+          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="Python" value="3606" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1536522356772" expanded="true" signature="111:684" ph="..." />
+                <marker date="1536522839250" expanded="true" signature="111:648" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/computerspeech.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="375">
+              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1536519582398" expanded="true" signature="270:886" ph="..." />
+                <marker date="1536523077637" expanded="true" signature="264:880" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,12 +90,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/computervision.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            <state relative-caret-position="443">
+              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1536519582378" expanded="true" signature="278:279" ph="..." />
-                <marker date="1536519582378" expanded="true" signature="278:284" ph="..." />
+                <marker date="1536523044157" expanded="true" signature="278:279" ph="..." />
+                <marker date="1536523044157" expanded="true" signature="278:284" ph="..." />
               </folding>
             </state>
           </provider>
@@ -114,9 +116,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/computerspeech.py" />
-        <option value="$PROJECT_DIR$/computervision.py" />
         <option value="$PROJECT_DIR$/__main__.py" />
+        <option value="$PROJECT_DIR$/computervision.py" />
+        <option value="$PROJECT_DIR$/computerspeech.py" />
       </list>
     </option>
   </component>
@@ -289,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536521665847</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed debug mode">
+      <created>1536522423661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1536522423661</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -333,39 +342,40 @@
     <MESSAGE value="Added call to Rekognition image-to-text service" />
     <MESSAGE value="Added call to Polly service" />
     <MESSAGE value="added debug mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="added debug mode" />
+    <MESSAGE value="fixed debug mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed debug mode" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/computerspeech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1536519582398" expanded="true" signature="270:886" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/computervision.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        <state relative-caret-position="443">
+          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1536519582378" expanded="true" signature="278:279" ph="..." />
-            <marker date="1536519582378" expanded="true" signature="278:284" ph="..." />
+            <marker date="1536523044157" expanded="true" signature="278:279" ph="..." />
+            <marker date="1536523044157" expanded="true" signature="278:284" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1536522356772" expanded="true" signature="111:684" ph="..." />
+            <marker date="1536522839250" expanded="true" signature="111:648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computerspeech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1536523077637" expanded="true" signature="264:880" ph="..." />
           </folding>
         </state>
       </provider>
