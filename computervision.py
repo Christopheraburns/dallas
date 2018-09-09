@@ -58,6 +58,8 @@ class Vision(object):
                            ]
                 select = randint(0,3)
                 phraseBuilder = phrases[select]
-                print(phraseBuilder)
+                #print(phraseBuilder)
+
+            return phraseBuilder
         except Exception as e:
             print("error in computervision.Vision.imageToText: {}".format(e))
