@@ -9,8 +9,10 @@ def main(init):
         vision.Vision.takeSinglePicture()
 
         # Send to rekognition image-to-text service
+        result = vision.Vision.imageToText()
 
         # Get result
+        print(result)
 
         # Send result to Polly
 

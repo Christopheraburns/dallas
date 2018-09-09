@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="843086fd-5e9c-42f7-8617-96b4d5c4d231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computervision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computervision.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,42 +32,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1259" />
-          <entry key="txt" value="63" />
+          <entry key="py" value="2134" />
+          <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="63" />
-          <entry key="Python" value="1259" />
+          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="Python" value="2134" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1536435939076" expanded="true" signature="61:383" ph="..." />
+                <marker date="1536459731113" expanded="true" signature="61:450" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/computervision.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="878">
+              <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1536437984865" expanded="true" signature="258:259" ph="..." />
-                <marker date="1536437984865" expanded="true" signature="258:264" ph="..." />
+                <marker date="1536459685757" expanded="true" signature="278:279" ph="..." />
+                <marker date="1536459685757" expanded="true" signature="278:284" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,8 +88,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/__main__.py" />
         <option value="$PROJECT_DIR$/computervision.py" />
+        <option value="$PROJECT_DIR$/__main__.py" />
       </list>
     </option>
   </component>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536437917410</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hardcode to USB Webcam at /dev/video0">
+      <created>1536438007602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536438007602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -219,28 +227,29 @@
     <MESSAGE value="TakeSingelPicture()" />
     <MESSAGE value="Update Error Messages" />
     <MESSAGE value="Fix pycam camera error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix pycam camera error" />
+    <MESSAGE value="Hardcode to USB Webcam at /dev/video0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hardcode to USB Webcam at /dev/video0" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/__main__.py">
+    <entry file="file://$PROJECT_DIR$/computervision.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="878">
+          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1536435939076" expanded="true" signature="61:383" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1536459685757" expanded="true" signature="278:279" ph="..." />
+            <marker date="1536459685757" expanded="true" signature="278:284" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/computervision.py">
+    <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1536437984865" expanded="true" signature="258:259" ph="..." />
-            <marker date="1536437984865" expanded="true" signature="258:264" ph="..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1536459731113" expanded="true" signature="61:450" ph="..." />
           </folding>
         </state>
       </provider>
