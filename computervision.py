@@ -43,7 +43,7 @@ class Vision(object):
 
             tDetections = response.values()[0]
 
-            if (len(tDetections) > 0) && tDetections is not None:
+            if (len(tDetections) > 0) and (tDetections is not None):
                 phraseBuilder = ""
                 for item in tDetections:
                     if (item["Type"] == "LINE"):
