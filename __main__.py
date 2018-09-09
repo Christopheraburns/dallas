@@ -2,14 +2,18 @@ import sys
 import computervision as vision
 import computerspeech as speech
 
-debug = False
 
 def main(init):
+    debug = False
+
     try:
 
-        if len(sys.argv) == 1:
-            debug = sys.argv[0]
-
+        if len(sys.argv) > 1:
+            check = sys.argv[1]
+            if (check is not True) or (check is not False):
+                print("invalid parameter")
+            else:
+                debug = sys.argv[1]
 
         # Take a picture
         vision.Vision.takeSinglePicture(False, debug)
