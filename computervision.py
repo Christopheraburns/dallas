@@ -42,16 +42,15 @@ class Vision(object):
             with open("capture.png", "rb") as imagefile:
                 response = rekognition.detect_text(Image={'Bytes': imagefile.read()})
 
-            tDetections = response.values()[0]
+            tDetections = response
             if(debug == True):
                 print("Reko imagetoText result: {}".format(tDetections))
 
-            if (len(tDetections) > 0) and (tDetections is not None):
-                for item in tDetections:
-                    if (item["Type"] == "LINE"):
-                        phraseBuilder = phraseBuilder + "" + item["DetectedText"]
+            for detectedText in response["TextDetections"]:
+                if(detectedText['Type'] == 'WORD'):
+                        phraseBuilder = phraseBuilder + " " + detectedText['DetectedText']
 
-                phraseBuilder = "I believe it says " + phraseBuilder + ". Is that correct?"
+                phraseBuilder = "I believe it says, " + phraseBuilder + ". Is that correct?"
             else:
                 phrases = ["Sorry, I don't see any readable text",
                            "I can't seem to read anything",
