@@ -42,16 +42,16 @@ class Vision(object):
             with open("capture.png", "rb") as imagefile:
                 response = rekognition.detect_text(Image={'Bytes': imagefile.read()})
 
-            tDetections = response
+
             if(debug == True):
-                print("Reko imagetoText result: {}".format(tDetections))
+                print("Reko imagetoText result: {}".format(response))
 
             if len(response["TextDetections"]) > 0:
                 for detectedText in response["TextDetections"]:
                     if(detectedText['Type'] == 'WORD'):
                         phraseBuilder = phraseBuilder + " " + detectedText['DetectedText']
 
-                    phraseBuilder = "I believe it says, " + phraseBuilder + ". Is that correct?"
+                phraseBuilder = "I believe it says, " + phraseBuilder + ". Is that correct?"
             else:
                 phrases = ["Sorry, I don't see any readable text",
                            "I can't seem to read anything",
@@ -60,8 +60,9 @@ class Vision(object):
                            ]
                 select = randint(0, 3)
                 phraseBuilder = phrases[select]
-                if(debug == True):
-                    print("Voice output should be: {}".format(phraseBuilder))
+
+            if debug == True:
+                print("Voice output should be: {}".format(phraseBuilder))
 
             return phraseBuilder
         except Exception as e:
