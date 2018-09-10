@@ -23,7 +23,7 @@ def pollySays(value, debug):
             pygame.mixer.init()
             pygame.mixer.music.load('speech.ogg')
             pygame.mixer.music.play()
-            time.sleep(1)
+            time.sleep(5)
 
     except(BotoCoreError, ClientError) as e:
         print("Error: computerspeech.py -> PollySays: {}".format(e))
