@@ -46,7 +46,7 @@ class Vision(object):
             if(debug == True):
                 print("Reko imagetoText result: {}".format(tDetections))
 
-            if len(response["TextDetections"] > 0)
+            if len(response["TextDetections"]) > 0:
                 for detectedText in response["TextDetections"]:
                     if(detectedText['Type'] == 'WORD'):
                         phraseBuilder = phraseBuilder + " " + detectedText['DetectedText']
